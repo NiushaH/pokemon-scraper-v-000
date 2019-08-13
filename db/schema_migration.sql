@@ -3,7 +3,7 @@
 
 -- DB = {:conn => SQLite3::Database.new("db/pokemon.db")}
 
-      CREATE TABLE pokemon (
+      CREATE TABLE IF NOT EXISTS pokemon (
         id INTEGER PRIMARY KEY, 
         name TEXT, 
         type TEXT

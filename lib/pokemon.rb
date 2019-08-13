@@ -8,7 +8,7 @@ class Pokemon
     # @db = db
   end 
 
-  def 
-  end 
+  # def 
+  # end 
 
 end

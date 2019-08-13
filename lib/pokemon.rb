@@ -14,9 +14,9 @@ class Pokemon
         VALUES (?, ?, ?)
       SQL
 
-      DB[:conn].execute(sql, self.name, self.type, self.db)
+      DB.execute(sql, self.name, self.type, self.db)
 
-      @id = DB[:conn].execute("SELECT last_insert_rowid() FROM pokemon")[0][0]
+      @id = DB.execute("SELECT last_insert_rowid() FROM pokemon")[0][0]
 
   end 
 

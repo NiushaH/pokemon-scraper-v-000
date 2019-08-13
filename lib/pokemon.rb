@@ -18,6 +18,4 @@ class Pokemon
     pokemon = db.execute("SELECT * FROM pokemon WHERE id=?", [num])
     self.new(id: pokemon[0], name: pokemon[1], type: pokemon[2], db: db)
   end
-
-
 end
